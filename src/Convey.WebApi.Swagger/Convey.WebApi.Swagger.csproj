@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <ProjectReference Include="..\..\..\Convey.WebApi\src\Convey.WebApi\Convey.WebApi.csproj" />
+    <ProjectReference Include="..\..\..\Convey.Docs.Swagger\src\Convey.Docs.Swagger\Convey.Docs.Swagger.csproj" />
+  </ItemGroup>
+  
+</Project>
