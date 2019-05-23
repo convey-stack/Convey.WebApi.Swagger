@@ -18,15 +18,12 @@ namespace Convey.WebApi.Swagger.Filters
                 case "GET":
                     item.Get = new Operation();
                     return item.Get;
-                    break;
                 case "POST":
                     item.Post = new Operation();
                     return item.Post;
-                    break;
                 case "PUT":
                     item.Put = new Operation();
                     return item.Put;
-                    break;
                 case "DELETE":
                     item.Delete = new Operation();
                     return item.Delete;                    
@@ -71,7 +68,7 @@ namespace Convey.WebApi.Swagger.Filters
                     }
                 }
 
-                foreach (var response in definition.Reposnses)
+                foreach (var response in definition.Responses)
                 {
                     operation.Responses.Add(new KeyValuePair<string, Response>(
                         response.StatusCode.ToString(),
